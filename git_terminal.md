@@ -264,6 +264,44 @@ If you also find it annoying to press `q` every time in `git log`, you can chang
 
 `git config --global --replace-all core.pager cat`
 
+__Optional Settings__
+
+Below are some optional settings for your `.gitconfig` file.   You do not strictly need the following but they are very nice to have:
+
+```
+[alias]
+  lol = log --graph --decorate --pretty=short --abbrev-commit
+  lola = log --graph --decorate --pretty=format:'%d %C(yellow)%h%Creset %an:%ar %C(green)->%Creset %s' --abbrev-commit --all
+  last = log --stat -1 HEAD
+  co = checkout
+  br = branch
+  ci = commit
+  st = status
+  unstage = reset HEAD --
+  dt = difftool
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+[merge]
+	tool = opendiff
+[diff]
+	tool = opendiff
+[difftool]
+	prompt = false
+```
+
+Now you can do the following awesome commands:
+
+
+* `git lol` - shows a one line history of your commits in the current branch
+* `git lola` - one line history of all branches
+* `git last` - detailed history of the last commit
+* `git dt` - open up your diff tool of choice to see what you have changed
+
+
+
 ### Scratching the surface
 
 Although we have covered quite a bit of Git, we are still just getting started learning about it. Below is a fun chart explaining what happens if you're in trouble with Git. This should not scare you, just give you an idea of how powerful Git is and how many commands there are for all kinds of situations. Take a look, get inspired and then continue on to the exercises!
@@ -272,7 +310,7 @@ Although we have covered quite a bit of Git, we are still just getting started l
 
 ### Exercise
 
-Now that you have learned how a basic GitHub workflow happens, try running through this a couple times on your own:
+Now that you have learned how a basic Git workflow happens, try running through this a couple times on your own:
 
 - initialize a new repository
 - add and commit some new files
