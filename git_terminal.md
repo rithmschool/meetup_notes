@@ -1,4 +1,4 @@
-# Command Line Part Introduction
+# Command Line Introduction
 
 ### Objectives:
 
@@ -308,17 +308,19 @@ Although we have covered quite a bit of Git, we are still just getting started l
 
 ![http://justinhileman.info/article/git-pretty/git-pretty.png](http://justinhileman.info/article/git-pretty/git-pretty.png)
 
-### Exercise
+### Exercises
 
-Now that you have learned how a basic Git workflow happens, try running through this a couple times on your own:
+*  Now that you have learned how a basic Git workflow happens, try running through this a couple times on your own:
 
-- initialize a new repository
-- add and commit some new files
-- create a new branch
-- add some new files on that branch
-- commit 
-- switch back to master
-- merge in your changes
-- see your changes using `git log`
+	- initialize a new repository
+	- add and commit some new files
+	- create a new branch
+	- add some new files on that branch
+	- commit
+	- switch back to master
+	- merge in your changes
+	- see your changes using `git log`
 
-Make sure to do this a couple times - there is a good amount of muscle memory with this.
+	Make sure to do this a couple times - there is a good amount of muscle memory with this.
+
+* If you have some experience with Github (at least enough to fork and clone a repository), try to solve [Noah Veltman's Command Line Mystery](https://github.com/veltman/clmystery)

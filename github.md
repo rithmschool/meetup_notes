@@ -15,7 +15,7 @@ GitHub is a web-based Git repository hosting service. Simply put, it is a tool u
 
 ### Create a Remote repository
 
-Once you have an account, head over to [https://github.com/new](https://github.com/new) and create a repository. In this example, we will be creating a repository called `first_repo`. Do not worry about the description or checking the box to initialize the repository with a README. 
+Once you have an account, head over to [https://github.com/new](https://github.com/new) and create a repository. In this example, we will be creating a repository called `first_repo`. For this repo, you do not need a description.  Also, __do not__ click the check box to initialize the repository with a README.  You will fill in the content for the repository on your computer.
 
 ```bash
 echo "# first_repo" >> README.md
@@ -70,7 +70,7 @@ Remember, the "forking" is a **GitHub** concept, and not something directly rela
 
 Once you have forked the repository, you need to take that repository (the remote one you just made) and download the code on your local computer (make a local repository). Instead of making a folder and going through the whole `git init` process and adding a remote, you can use the `git clone` command, which takes a link the to repository and downloads it (with the remote set up!)
 
-Head over to your forked copy of the repository and you will see a button that is either set to `HTTPS` or `SSH`. When you click on this button it should display "Choose a clone URL" - **Make sure that your is using SSH**. Then copy the link by either selecting and copying or by clicking the icon next to the link (when you hover over it - it should say "copy to clipboard").
+Head over to your forked copy of the repository and you will see a button that is either set to `HTTPS` or `SSH`. When you click on this button it should display "Choose a clone URL" - **Make sure that you are using SSH**. Then copy the link by either selecting and copying or by clicking the icon next to the link (when you hover over it - it should say "copy to clipboard").
 
 In the terminal (you can start in your home directory) run the command `git clone PASTE_URL_HERE`
 
