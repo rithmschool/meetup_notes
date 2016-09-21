@@ -68,7 +68,7 @@ Remember, the "forking" is a **GitHub** concept, and not something directly rela
 
 ### Clone
 
-Once you have forked the repository, you need to take that repository (the remote one you just made) and download the code on your local computer (make a local repository). Instead of making a folder and going through the whole `git init` process and adding a remote, you can use the `git clone` command, which takes a link the to repository and downloads it (with the remote set up!)
+Once you have forked the repository, you need to take that repository (the remote one you just made) and download the code on your local computer.  When you download the code to your computer, you create a local repository that is an exact copy of the repository on github. We do not want to use `git init` in this case because we already have a repository on github that we want a copy of.  `git init` creates a brand new repo.  Intead, we can use the `git clone` command, which takes a link to the repository and downloads it (with the remote set up!)
 
 Head over to your forked copy of the repository and you will see a button that is either set to `HTTPS` or `SSH`. When you click on this button it should display "Choose a clone URL" - **Make sure that you are using SSH**. Then copy the link by either selecting and copying or by clicking the icon next to the link (when you hover over it - it should say "copy to clipboard").
 
